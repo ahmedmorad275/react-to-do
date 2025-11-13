@@ -1,0 +1,21 @@
+Tasks
+-- No task >> Add message
+=================
+-- Tasks ?
+--- Toast
+=================
+Delete Model
+-- Button for Confirm
+-- Button for Cancel
+=================
+Edit Model
+-- Input for New task name
+-- Button for Confirm
+-- Button for Cancel
+
+===========
+App
+-- Stats
+-- Add Tasks
+-- Filter Tasks
+-- Tasks

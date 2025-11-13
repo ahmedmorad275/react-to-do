@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--foreground);
+  background-color: var(--background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --background: hsl(210 40% 98%);
+  --foreground: hsl(215 25% 15%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(215 25% 15%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(215 25% 15%);
+  --primary: hsl(195 85% 45%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(210 30% 94%);
+  --secondary-foreground: hsl(215 25% 15%);
+  --muted: hsl(210 30% 94%);
+  --muted-foreground: hsl(215 15% 50%);
+  --accent: hsl(195 85% 45%);
+  --accent-foreground: hsl(0 0% 100%);
+  --destructive: hsl(0 72% 55%);
+  --edit: hsl(52, 72%, 55%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --border: hsl(215 20% 88%);
+  --input: hsl(215 20% 88%);
+  --ring: hsl(195 85% 45%);
+  --success: hsl(145 65% 45%);
+  --success-foreground: hsl(0 0% 100%);
+  --radius: 0.75rem;
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.active {
+  background: var(--accent);
+  color: var(--primary-foreground);
+  font-weight: bold;
+}
+
+.title svg {
+  color: var(--primary);
+}
+.title h1 {
+  color: var(--foreground);
+}
+.header p {
+  color: var(--muted-foreground);
+}
+.card {
+  border-width: 1px;
+  border-color: var(--border);
+  background-color: var(--card);
+}
+.card p {
+  color: var(--muted-foreground);
+}
+.filterBtn {
+  outline: none;
+}
+.filterBtn:focus {
+  border: solid 2px var(--accent);
+
+}
