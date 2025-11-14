@@ -9,6 +9,7 @@ const App = () => {
   const [tasks, setTasks] = useState(
     JSON.parse(localStorage.getItem('tasks')) || []
   );
+  // useState to filter Tasks
   const [filter, setFilter] = useState('all');
   // useRef To get New Task Name
   const taskNameRef = useRef();
@@ -27,7 +28,6 @@ const App = () => {
     setTasks(newTasks);
     localStorage.setItem('tasks', JSON.stringify(newTasks));
   }
-
   // Filter Tasks
   const filteredTasks = tasks.filter((task) => {
     if (filter === 'completed') {

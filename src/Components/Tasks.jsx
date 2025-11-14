@@ -11,6 +11,7 @@ const Tasks = ({ tasks, setDone, setDelete }) => {
           stat={task.isDone ? 'bg-emerald-200 line-through' : ''}
           markDone={() => setDone(task.id)}
           markDelete={() => setDelete(task.id)}
+          icon={task.isDone}
         />
       ))}
     </div>

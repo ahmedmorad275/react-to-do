@@ -10,21 +10,20 @@ const TasksContainer = ({
   onDone,
   onDelete,
 }) => {
-  const incomeTasks = tasks;
   return (
     <div className="tasksBox mt-8">
       <FilterButton
-        tasks={incomeTasks}
+        tasks={tasks}
         all={allTasks}
         active={activeTasks}
         completed={completedTasks}
       />
-      {incomeTasks.length < 1 ? (
+      {tasks.length < 1 ? (
         <p className="pt-8 text-(--muted-foreground) text-center">
-          No Tasks yes. Add one to get started!
+          No Tasks yet. Add one to get started!
         </p>
       ) : (
-        <Tasks setDone={onDone} setDelete={onDelete} tasks={incomeTasks} />
+        <Tasks setDone={onDone} setDelete={onDelete} tasks={tasks} />
       )}
     </div>
   );
