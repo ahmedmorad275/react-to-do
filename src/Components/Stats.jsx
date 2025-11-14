@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import StatCard from './StatCard';
+import { TaskContext } from '../Contexts/TaskContext';
 
-const Stats = ({ tasks }) => {
-  const activeTasks = tasks.filter((task) => !task.isDone);
-  const completedTasks = tasks.filter((task) => task.isDone);
+const Stats = () => {
+  const { tasksInit } = useContext(TaskContext);
+  const activeTasks = tasksInit.filter((task) => !task.isDone);
+  const completedTasks = tasksInit.filter((task) => task.isDone);
   return (
     <div className="stats-box flex gap-3 justify-between mt-8">
       <StatCard
         color={'text-(--foreground)'}
-        number={tasks.length}
+        number={tasksInit.length}
         desc={'Total'}
       />
       <StatCard
